@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+     >
+    
+    
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:text="@string/hello_world"
+       android:textColor="#34495e"
+        android:textStyle="bold"
+        android:textSize="15dip" />
+     <TextView
+        android:id="@+id/texto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:text="@string/hello_world"
+        android:textColor="#34495e"
+        android:textStyle="bold"
+         android:layout_below="@+id/titulo"
+        android:textSize="13dip" />
+     
+     <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texto"
+        android:layout_centerHorizontal="true"
+        android:background="#34495e"
+        android:text="Cómo llegar"
+        android:textColor="#fff"
+        android:textSize="16dip"
+        android:typeface="serif"
+        android:onClick="comoLlegar" />
+     
+     <Button
+        android:id="@+id/ver_fotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:background="#34495e"
+        android:text="ver imagenes"
+        android:textColor="#fff"
+        android:textSize="16dip"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:typeface="serif"
+        android:onClick="" />
+     
+     <!-- Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:background="#34495e"
+        android:text="guarda alarma"
+        android:textColor="#fff"
+        android:textSize="16dip"
+        android:typeface="serif"
+        android:layout_marginTop="5dp"
+        android:onClick="guardaAlarma"
+        /-->
+     
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ver_fotos"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+    
+   
+</RelativeLayout>

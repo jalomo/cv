@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#f2f5fb"
+    android:orientation="horizontal"
+    android:padding="10dip" >
+  <!--  android:background="@drawable/list_selector"-->
+    <!--  ListRow Left sied Thumbnail image -->
+   
+ 
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="@string/hello_world"
+        
+        android:typeface="sans"
+        android:textColor="#34495e"
+        android:textStyle="bold"
+        android:textSize="18dip"/>
+ 
+    <!-- Artist Name -->
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:textColor="#34495e"
+        android:textSize="10dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        
+        android:text="@string/hello_world" />
+ 
+    <!-- Rightend Duration -->
+    
+ 
+     <!-- Rightend Arrow -->
+     <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+     
+  
+     <EditText
+        android:id="@+id/id_noticia"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:ems="10"
+        android:hint="id"
+        android:visibility="gone"/>
+     <EditText
+        android:id="@+id/texto"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:ems="10"
+        android:hint="id"
+        android:visibility="gone"/>
+     <EditText
+        android:id="@+id/url_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:ems="10"
+        android:hint="id"
+        android:visibility="gone"/>
+</RelativeLayout>

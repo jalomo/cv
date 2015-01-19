@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+  <ScrollView   
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"  >
+
+                   <!-- EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nmobre del alumno" >
+
+        <requestFocus />
+    </EditText-->
+    <Spinner 
+        android:id="@+id/spinnerAl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+    />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Número de teléfono " />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Día" />
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/dia_"
+        />
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mes" />
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/mes_"
+        />
+    
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Año" />
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/anio_"
+        />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Hora" />
+
+    <Spinner 
+        android:id="@+id/spinnerMa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+    />
+
+    <Button
+        android:id="@+id/envia_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:gravity="center"
+        android:onClick="" />
+            </LinearLayout>
+      </ScrollView>  
+   
+   
+ 
+</RelativeLayout>

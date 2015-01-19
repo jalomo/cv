@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+   
+            
+<include layout="@layout/header_layout_atras" />
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+      
+		<TextView
+		    android:id="@+id/titulo_encuesta"
+		    android:background="#fff"
+		    android:gravity="center_horizontal"
+		    android:layout_marginLeft="10dp"
+		    android:padding="5dip"
+		    android:text="SERVICIOS ESCOLARES"
+		    android:textColor="#000"
+		    android:textSize="16dip"
+		    android:typeface="serif" />
+    </TableRow>
+
+</TableLayout>
+
+
+
+
+<include layout="@layout/layout_preguntas" />
+
+
+
+
+</LinearLayout>

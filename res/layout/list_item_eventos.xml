@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#f2f5fb"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!-- ListRow Left sied Thumbnail image -->
+
+
+    <!-- Title Of Song -->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="@string/hello_world"
+         android:textColor="#34495e"
+        android:textStyle="bold"
+        android:textSize="18dip"
+        android:typeface="sans" />
+
+    <!-- Artist Name -->
+
+    <TextView
+        android:id="@+id/lugar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="@string/hello_world"
+        android:textColor="#34495e"
+        android:textSize="10dip" />
+    
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lugar"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="@string/hello_world"
+        android:textColor="#34495e"
+        android:textSize="10dip" />
+    <TextView
+        android:id="@+id/hora"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fecha"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="@string/hello_world"
+        android:textColor="#34495e"
+        android:textSize="10dip" />
+
+    <!-- Rightend Duration -->
+
+
+    <!-- Rightend Arrow -->
+
+    <EditText
+        android:id="@+id/id_evento"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:ems="10"
+        android:hint="id"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/texto"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:ems="10"
+        android:hint="id"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/latitud"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:ems="10"
+        android:hint="id"
+        android:visibility="gone" />
+    <EditText
+        android:id="@+id/longitud"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:ems="10"
+        android:hint="id"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/fecha"
+        android:src="@drawable/ubicacion"
+       />
+
+    <!--  ImageView
+        android:id="@+id/mapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/fecha"
+        android:layout_below="@+id/fecha"
+        android:src="@drawable/alarma" /-->
+
+</RelativeLayout>

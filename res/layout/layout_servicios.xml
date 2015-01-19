@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="@drawable/fondo_nuevo" >
+    
+    <TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="encuestas"
+        >
+
+        
+
+		<TextView
+		    
+		    android:background="#fff"
+		    android:gravity="center_horizontal"
+		    android:layout_marginLeft="0dp"
+		    android:padding="5dip"
+		    android:text="ENCUESTAS"
+		    android:textColor="#000"
+		    android:textSize="16dip"
+		    android:typeface="serif"
+		     />
+		
+		<ImageView
+            android:id="@+id/icon_n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:src="@drawable/arrow" />
+    </TableRow>
+    
+     <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calificaciones_" >
+
+        
+
+		<TextView
+		    
+		    android:background="#fff"
+		    android:gravity="center_horizontal"
+		    android:layout_marginLeft="20dp"
+		    android:padding="5dip"
+		    android:text="CALIFICACIONES"
+		    android:textColor="#000"
+		    android:textSize="16dip"
+		    android:typeface="serif" />
+		
+		<ImageView
+            android:id="@+id/icon_n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:src="@drawable/arrow" />
+    </TableRow>
+    
+      <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:onClick="familia">
+
+        
+
+		<TextView
+		    
+		    android:background="#fff"
+		    android:gravity="center_horizontal"
+		    android:layout_marginLeft="20dp"
+		    android:padding="5dip"
+		    android:text="CIRCULARES"
+		    android:textColor="#000"
+		    android:textSize="16dip"
+		    android:typeface="serif" />
+		
+		<ImageView
+            android:id="@+id/icon_n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:src="@drawable/arrow" />
+    </TableRow>
+
+</TableLayout>
+    
+
+</LinearLayout>

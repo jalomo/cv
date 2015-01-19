@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!-- ListRow Left sied Thumbnail image -->
+
+
+    <!-- Title Of Song -->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="@string/hello_world"
+        android:textColor="#34495e"
+        android:textSize="15dip"
+        android:typeface="sans" />
+
+    <!-- Artist Name -->
+<EditText
+        android:id="@+id/direccion"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:ems="10"
+        android:hint="id"
+        android:visibility="gone" />
+
+</RelativeLayout>

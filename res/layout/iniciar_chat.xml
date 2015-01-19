@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo_nuevo" >
+    
+<include layout="@layout/header_layout" />
+
+    <Button
+        android:id="@+id/maestro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/familia"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="188dp"
+        android:text="MAESTRO" />
+
+    <Button
+        android:id="@+id/familia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/maestro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp"
+        android:text="FAMILIA" />
+
+</RelativeLayout>
